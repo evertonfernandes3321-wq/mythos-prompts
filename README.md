@@ -2,327 +2,337 @@
 
 # 🜂 Mythos Prompts
 
-### **44 superprompts** de engenharia em markdown puro — nível _Mythos_
+**English** · [Português (pt-BR)](./README.pt-BR.md)
 
-Cole em qualquer LLM (Claude · ChatGPT · Gemini · …) e aponte para o seu código/contexto.
+### **44 engineering superprompts** in pure markdown — _Mythos_ tier
 
-**Rigor sub-atômico · Agnósticos de stack · Defensivos · Formato de saída fixo**
+Paste into any LLM (Claude · ChatGPT · Gemini · …) and point it at your code/context.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-22c55e.svg)](./LICENSE)
-![Prompts](https://img.shields.io/badge/prompts-44-6366f1.svg)
-![Stack](https://img.shields.io/badge/stack-agnóstico-0ea5e9.svg)
-![Idioma](https://img.shields.io/badge/idioma-pt--BR-f59e0b.svg)
+**Sub-atomic rigor · Stack-agnostic · Defensive · Fixed output format**
+
+![Stars](https://img.shields.io/github/stars/evertonfernandes3321-wq/mythos-prompts?style=social)
+[![License: MIT](https://img.shields.io/github/license/evertonfernandes3321-wq/mythos-prompts)](./LICENSE)
+![Release](https://img.shields.io/github/v/release/evertonfernandes3321-wq/mythos-prompts)
+![Last commit](https://img.shields.io/github/last-commit/evertonfernandes3321-wq/mythos-prompts)
+![Prompts](https://img.shields.io/badge/prompts-44-6366f1)
+![Stack](https://img.shields.io/badge/stack-agnostic-0ea5e9.svg)
 
 </div>
 
----
-
-## O que é isto
-
-Cada arquivo `.md` é um **superprompt operacional** pronto para uso. É o conteúdo idêntico das skills do repositório irmão [**mythos-skills**](https://github.com/evertonfernandes3321-wq/mythos-skills) — aqui sem o frontmatter de skill, para você **copiar e colar** em qualquer assistente de IA.
-
-O que os torna **nível Mythos**:
-
-- **Rigor sub-atômico** — caminho feliz _e_ de erro, edge cases, defaults, concorrência, papéis e ambientes.
-- **Agnósticos de stack** — funcionam em qualquer linguagem/framework, com exemplos paralelos (JS/TS, Python, Go, Java/Kotlin, C#/.NET, Ruby, PHP, Rust, mobile; Postgres/MySQL/Mongo; Stripe/Square; PostHog/Mixpanel…). Dois são especializados em **Flutter**.
-- **Verificação empírica** — validar por output não-falsificável (hash/count/exit-code), nunca "parece que funcionou".
-- **Defensivos** — temas sensíveis são exclusivamente defensivos/autorizados; segredos sempre mascarados.
-- **Formato de saída fixo** — resumo executivo → achados com localização + correção + teste → tabela → plano em fases → checklist final.
-
-## Como usar
-
-1. Abra o `.md` do objetivo desejado.
-2. Copie **todo** o conteúdo.
-3. Cole no seu assistente de IA, anexando ou apontando para o código/contexto a analisar.
-
-> 🧩 Quer usar como **skills nativas do Claude Code** (descoberta e roteamento automáticos, com `references/assets/scripts`)? Use o repositório irmão [**mythos-skills**](https://github.com/evertonfernandes3321-wq/mythos-skills).
+> ⭐ If this saves you time, a star helps others find it.
 
 ---
 
-## Índice
+## What this is
 
-| Categoria | Prompts |
+Every `.md` file is a ready-to-use **operational superprompt**. The content is identical to the skills in the sibling repo [**mythos-skills**](https://github.com/evertonfernandes3321-wq/mythos-skills) — here, stripped of the skill frontmatter so you can **copy and paste** into any AI assistant.
+
+What makes them **Mythos tier**:
+
+- **Sub-atomic rigor** — happy path _and_ error path, edge cases, defaults, concurrency, roles, and environments.
+- **Stack-agnostic** — they work in any language/framework, with parallel examples (JS/TS, Python, Go, Java/Kotlin, C#/.NET, Ruby, PHP, Rust, mobile; Postgres/MySQL/Mongo; Stripe/Square; PostHog/Mixpanel…). Two are specialized in **Flutter**.
+- **Empirical verification** — validate via non-falsifiable output (hash/count/exit-code), never "looks like it worked."
+- **Defensive** — sensitive topics are strictly defensive/authorized; secrets are always masked.
+- **Fixed output format** — executive summary → findings with location + fix + test → table → phased plan → final checklist.
+
+> 🌐 **Language note:** Skill bodies/prompts are written in PT-BR (Portuguese); names, README, and structure are English. PRs translating bodies to EN welcome.
+
+## How to use
+
+1. Open the `.md` for your goal.
+2. Copy the **entire** contents.
+3. Paste it into your AI assistant, attaching or pointing it at the code/context to analyze.
+
+> 🧩 Want them as **native Claude Code skills** (automatic discovery and routing, with `references/assets/scripts`)? Use the sibling repo [**mythos-skills**](https://github.com/evertonfernandes3321-wq/mythos-skills).
+
+> ⚡ **Run them all at once:** the sibling repo ships a **[RUN-ALL.md](https://github.com/evertonfernandes3321-wq/mythos-skills/blob/main/RUN-ALL.md)** playbook — run every skill against a single repository and get **one report per skill**. See **[examples/](https://github.com/evertonfernandes3321-wq/mythos-skills/tree/main/examples)** for a sample report.
+
+---
+
+## Table of contents
+
+| Category | Prompts |
 |-----------|---------|
-| [🔒 Segurança](#-segurança) | 9 |
-| [🗄️ Banco de Dados & Dados](#️-banco-de-dados--dados) | 4 |
-| [📊 Observabilidade & Operação](#-observabilidade--operação) | 5 |
-| [⚙️ Rigor Operacional & Coordenação](#️-rigor-operacional--coordenação) | 4 |
-| [🐛 Depuração, Testes & Qualidade](#-depuração-testes--qualidade) | 8 |
-| [🎨 Frontend & Arquitetura de UI](#-frontend--arquitetura-de-ui) | 4 |
-| [🔌 Integrações, Billing & Privacidade](#-integrações-billing--privacidade) | 3 |
-| [🏗️ Processo, Design & Documentação](#️-processo-design--documentação) | 4 |
+| [🔒 Security](#-security) | 9 |
+| [🗄️ Database & Data](#️-database--data) | 4 |
+| [📊 Observability & Operations](#-observability--operations) | 5 |
+| [⚙️ Operational Rigor & Coordination](#️-operational-rigor--coordination) | 4 |
+| [🐛 Debugging, Testing & Quality](#-debugging-testing--quality) | 8 |
+| [🎨 Frontend & UI Architecture](#-frontend--ui-architecture) | 4 |
+| [🔌 Integrations, Billing & Privacy](#-integrations-billing--privacy) | 3 |
+| [🏗️ Process, Design & Documentation](#️-process-design--documentation) | 4 |
 | [📱 Mobile / Flutter](#-mobile--flutter) | 2 |
-| [💼 Negócios](#-negócios) | 1 |
+| [💼 Business](#-business) | 1 |
 
-🏅 = prompt **mestre** (o mais abrangente da categoria).
+🏅 = **master** prompt (the most comprehensive in its category).
 
 ---
 
-## 🔒 Segurança
+## 🔒 Security
 
 ### [`security-audit-full`](./security-audit-full.md) 🏅
-Auditoria de segurança defensiva **end-to-end**, no nível sub-atômico.
-**Quando:** pentest defensivo autorizado, revisão pré-deploy ou hardening abrangente.
-**Cobre:** auth · autorização/IDOR · injeções · XSS · SSRF · CSRF · uploads · secrets · cripto · supply chain · CI/CD · cloud/IaC · privacidade · business logic · concorrência · IA/LLM.
+**End-to-end** defensive security audit at the sub-atomic level.
+**When to use:** authorized defensive pentest, pre-deploy review, or comprehensive hardening.
+**Covers:** auth · authorization/IDOR · injections · XSS · SSRF · CSRF · uploads · secrets · crypto · supply chain · CI/CD · cloud/IaC · privacy · business logic · concurrency · AI/LLM.
 
 ### [`auth-authorization-audit`](./auth-authorization-audit.md)
-Autenticação e autorização, com **matriz de permissões** por recurso/papel.
-**Quando:** validar quem pode fazer o quê; achar rotas desprotegidas e checagens ausentes.
-**Cobre:** tokens/sessão/JWT (assinatura, expiração, revogação, logout, inatividade) · RBAC/ABAC · IDOR/BOLA · isolamento multi-tenant · endpoints admin · menor privilégio · identidade nunca confiada do cliente.
+Authentication and authorization, with a **permission matrix** by resource/role.
+**When to use:** validate who can do what; find unprotected routes and missing checks.
+**Covers:** tokens/session/JWT (signature, expiration, revocation, logout, inactivity) · RBAC/ABAC · IDOR/BOLA · multi-tenant isolation · admin endpoints · least privilege · identity never trusted from the client.
 
 ### [`auth-token-refresh-safety`](./auth-token-refresh-safety.md)
-Refresh token rotation **seguro sob concorrência** (o mecanismo, não o RBAC).
-**Quando:** implementar/revisar login persistente em mobile/SPA.
-**Cobre:** mutex single-flight · flag anti-loop no 401 · PUBLIC_PATHS · interceptor 401 reativo · taxonomia de erros · rotação no backend.
+Refresh token rotation that is **safe under concurrency** (the mechanism, not RBAC).
+**When to use:** implementing/reviewing persistent login on mobile/SPA.
+**Covers:** single-flight mutex · anti-loop flag on 401 · PUBLIC_PATHS · reactive 401 interceptor · error taxonomy · backend rotation.
 
 ### [`secrets-and-config-exposure-audit`](./secrets-and-config-exposure-audit.md)
-Caça a segredos e configuração exposta antes de publicar/deployar.
-**Quando:** antes de tornar um repo público ou de um deploy.
-**Cobre:** keys/tokens/credenciais hardcoded (cliente e servidor) · endpoints internos vazados no frontend · `.gitignore`/`.env` versionados · migração para env vars e secret managers · validação de config na inicialização.
+Hunt for exposed secrets and configuration before publishing/deploying.
+**When to use:** before making a repo public or before a deploy.
+**Covers:** hardcoded keys/tokens/credentials (client and server) · internal endpoints leaked in the frontend · committed `.gitignore`/`.env` · migration to env vars and secret managers · config validation at startup.
 
 ### [`injection-xss-csrf-audit`](./injection-xss-csrf-audit.md)
-Vulnerabilidades web clássicas com correções concretas por ecossistema.
-**Quando:** revisar entrada de usuário, templates, formulários e headers.
-**Cobre:** injeções (SQL/NoSQL/OS/template) · escaping **por contexto** (HTML/atributo/URL/JS/CSS) · tokens CSRF · validação no backend · headers (CSP, X-Frame-Options, HSTS).
+Classic web vulnerabilities with concrete, ecosystem-specific fixes.
+**When to use:** reviewing user input, templates, forms, and headers.
+**Covers:** injections (SQL/NoSQL/OS/template) · **context-aware** escaping (HTML/attribute/URL/JS/CSS) · CSRF tokens · backend validation · headers (CSP, X-Frame-Options, HSTS).
 
 ### [`file-upload-security-audit`](./file-upload-security-audit.md)
-Segurança de upload e manipulação de arquivos, ponta a ponta.
-**Quando:** qualquer endpoint que recebe arquivos.
-**Cobre:** MIME real + extensão (allowlist) · magic bytes · limites · sanitização contra path traversal · storage privado · bloqueio de executáveis/SVG-script/polyglots/zip-bombs · URLs assinadas · sandbox · isolamento por tenant.
+File upload and handling security, end to end.
+**When to use:** any endpoint that accepts files.
+**Covers:** real MIME + extension (allowlist) · magic bytes · limits · sanitization against path traversal · private storage · blocking executables/SVG-script/polyglots/zip-bombs · signed URLs · sandbox · per-tenant isolation.
 
 ### [`password-credential-security`](./password-credential-security.md)
-Senhas e credenciais com migração de hashes **sem quebrar logins**.
-**Quando:** detectou texto plano/hash fraco, ou vai endurecer autenticação.
-**Cobre:** detecção de MD5/SHA1/SHA256-cru · salt/pepper · Argon2id/bcrypt/scrypt com cost factor · zero-knowledge · comparação em tempo constante · reset seguro · re-hash transparente no próximo login.
+Passwords and credentials with hash migration **without breaking logins**.
+**When to use:** you've detected plaintext/weak hashes, or you're hardening authentication.
+**Covers:** detecting MD5/SHA1/raw-SHA256 · salt/pepper · Argon2id/bcrypt/scrypt with cost factor · zero-knowledge · constant-time comparison · secure reset · transparent re-hash on next login.
 
 ### [`production-readiness-audit`](./production-readiness-audit.md)
-Auditoria DevSecOps de prontidão para produção (go/no-go).
-**Quando:** antes do release/deploy final.
-**Cobre:** dependências vulneráveis/CVEs (npm/pip/go/maven/cargo/composer/bundler) · caça a _leftovers_ (rotas de teste, mocks, dados fake, credenciais hardcoded, bypass de auth) · plano de remoção + upgrade seguro + checklist go/no-go.
+DevSecOps production-readiness audit (go/no-go).
+**When to use:** before the final release/deploy.
+**Covers:** vulnerable dependencies/CVEs (npm/pip/go/maven/cargo/composer/bundler) · hunt for _leftovers_ (test routes, mocks, fake data, hardcoded credentials, auth bypass) · removal plan + safe upgrade + go/no-go checklist.
 
 ### [`https-security-headers-audit`](./https-security-headers-audit.md)
-Transporte seguro (HTTPS/TLS) e a suíte completa de **security headers**.
-**Quando:** garantir que nada trafega em claro e bloquear downgrade de protocolo.
-**Cobre:** mixed content (scripts/imagens/API/websocket via HTTP) · redirect 301 forçado HTTP→HTTPS · HSTS (includeSubDomains/preload) · CSP (nonce/hash, upgrade-insecure-requests) · X-Frame-Options/frame-ancestors · X-Content-Type-Options · Referrer-Policy · Permissions-Policy · cookies Secure/HttpOnly/SameSite · TLS 1.2+ anti-downgrade · config por Nginx/Apache/Caddy/IIS/Traefik/CDN/framework · validação `curl -I`/Observatory.
+Secure transport (HTTPS/TLS) and the complete suite of **security headers**.
+**When to use:** ensure nothing travels in the clear and block protocol downgrade.
+**Covers:** mixed content (scripts/images/API/websocket over HTTP) · forced 301 redirect HTTP→HTTPS · HSTS (includeSubDomains/preload) · CSP (nonce/hash, upgrade-insecure-requests) · X-Frame-Options/frame-ancestors · X-Content-Type-Options · Referrer-Policy · Permissions-Policy · Secure/HttpOnly/SameSite cookies · TLS 1.2+ anti-downgrade · config for Nginx/Apache/Caddy/IIS/Traefik/CDN/framework · `curl -I`/Observatory validation.
 
 ---
 
-## 🗄️ Banco de Dados & Dados
+## 🗄️ Database & Data
 
 ### [`database-tenant-isolation-audit`](./database-tenant-isolation-audit.md) 🏅
-Garante que **um tenant nunca veja dados de outro**.
-**Quando:** SaaS multi-tenant; revisar RLS/isolamento.
-**Cobre:** RLS vs schema-per-tenant e trade-offs · propagação de contexto de tenant · FORCE RLS · teste por matriz (usuários × tabelas × operações) · detecção de vazamento (views/triggers/SECURITY DEFINER/service-role) · menor privilégio.
+Guarantees that **one tenant never sees another's data**.
+**When to use:** multi-tenant SaaS; reviewing RLS/isolation.
+**Covers:** RLS vs schema-per-tenant and trade-offs · tenant context propagation · FORCE RLS · matrix testing (users × tables × operations) · leak detection (views/triggers/SECURITY DEFINER/service-role) · least privilege.
 
 ### [`database-performance-audit`](./database-performance-audit.md)
-Performance do banco e da camada de acesso a dados.
-**Quando:** o gargalo é a query, o ORM, a policy em linha ou o acesso a dados.
-**Cobre:** RLS lenta (auth-function por linha → cache/SELECT/helpers/índices) · N+1 e batching (DataLoader) · índices ausentes (FK sem índice, full scan) · EXPLAIN/ANALYZE · paginação keyset/cursor · pooling · transações.
+Database and data-access-layer performance.
+**When to use:** the bottleneck is the query, the ORM, an inline policy, or data access.
+**Covers:** slow RLS (per-row auth-function → cache/SELECT/helpers/indexes) · N+1 and batching (DataLoader) · missing indexes (FK without index, full scan) · EXPLAIN/ANALYZE · keyset/cursor pagination · pooling · transactions.
 
 ### [`data-integrity-and-ledger-audit`](./data-integrity-and-ledger-audit.md)
-Invariantes e razão (ledger) para sistemas de **estado crítico**.
-**Quando:** antes/depois de mexer em saldos; PR, incidente ou auditoria (financeiro, carteira, escrow, estoque, créditos).
-**Cobre:** Fórmula de Ouro (SUM=constante) · fechamento de razão e por lançamento · coerência de cache de saldo · double-entry · transações atômicas com meta-validação · dinheiro nunca em float · append-only com estornos · reconciliação · snapshots forenses (SHA-256).
+Invariants and ledger for **critical-state** systems.
+**When to use:** before/after touching balances; PR, incident, or audit (finance, wallet, escrow, inventory, credits).
+**Covers:** Golden Formula (SUM=constant) · ledger closure and per-entry closure · balance-cache coherence · double-entry · atomic transactions with meta-validation · money never in float · append-only with reversals · reconciliation · forensic snapshots (SHA-256).
 
 ### [`cache-and-server-state-architecture`](./cache-and-server-state-architecture.md)
-Coerência de cache e server-state, do cliente ao banco.
-**Quando:** dados stale, bugs de sincronização, invalidação inconsistente.
-**Cobre:** query key factory · invalidação por tags/entidades · optimistic update com rollback · flush→refresh→invalidate após colunas geradas por trigger · React Query/RTK/SWR/Apollo/Riverpod + Hibernate/Prisma/SQLAlchemy/EF + Redis/CDN/HTTP.
+Cache and server-state coherence, from the client to the database.
+**When to use:** stale data, sync bugs, inconsistent invalidation.
+**Covers:** query key factory · invalidation by tags/entities · optimistic update with rollback · flush→refresh→invalidate after trigger-generated columns · React Query/RTK/SWR/Apollo/Riverpod + Hibernate/Prisma/SQLAlchemy/EF + Redis/CDN/HTTP.
 
 ---
 
-## 📊 Observabilidade & Operação
+## 📊 Observability & Operations
 
 ### [`observability-logging-audit`](./observability-logging-audit.md) 🏅
-Deixa o sistema **debuggável, auditável e seguro** em produção.
-**Quando:** logs ruins, falhas silenciosas, difícil diagnosticar incidentes.
-**Cobre:** logs estruturados JSON · correlação requestId/traceId · eliminação de falhas silenciosas · redaction/masking · níveis de log · métricas · tracing · health checks · alertas.
+Makes the system **debuggable, auditable, and secure** in production.
+**When to use:** poor logs, silent failures, hard-to-diagnose incidents.
+**Covers:** structured JSON logs · requestId/traceId correlation · elimination of silent failures · redaction/masking · log levels · metrics · tracing · health checks · alerts.
 
 ### [`production-monitoring-standards`](./production-monitoring-standards.md)
-**Regras para construir** sistemas monitoráveis (projetar, não auditar).
-**Quando:** ao desenhar ou endurecer a operabilidade de um serviço.
-**Cobre:** request ID · stack trace com contexto · logs JSON · health checks · query/cache tracking · métricas de performance · testes de regressão · alertas · deploy com rollback automático.
+**Rules for building** monitorable systems (designing, not auditing).
+**When to use:** when designing or hardening the operability of a service.
+**Covers:** request ID · stack trace with context · JSON logs · health checks · query/cache tracking · performance metrics · regression tests · alerts · deploy with automatic rollback.
 
 ### [`error-handling-audit`](./error-handling-audit.md)
-Tratamento de erros e UX de falha, frontend e backend.
-**Quando:** erros engolidos, app trava sem feedback, `catch` vazio.
-**Cobre:** assíncronos sem tratamento · falhas silenciosas · perda de stack/cause · estados de erro/retry/fallback · error boundaries · handlers globais · erro esperado vs inesperado.
+Error handling and failure UX, frontend and backend.
+**When to use:** swallowed errors, app freezes with no feedback, empty `catch`.
+**Covers:** unhandled async operations · silent failures · loss of stack/cause · error/retry/fallback states · error boundaries · global handlers · expected vs unexpected errors.
 
 ### [`product-analytics-architecture`](./product-analytics-architecture.md)
-Analytics de **produto** orientada a eventos (distinto de logging).
-**Quando:** medir ativação, retenção e conversão.
-**Cobre:** catálogo de eventos como constantes · instrumentação com detecção first-ever (funil) · auto-tracking via observer de rota · init privacy-first com toggle · PostHog/Mixpanel/Amplitude.
+Event-driven **product** analytics (distinct from logging).
+**When to use:** measure activation, retention, and conversion.
+**Covers:** event catalog as constants · instrumentation with first-ever detection (funnel) · auto-tracking via route observer · privacy-first init with toggle · PostHog/Mixpanel/Amplitude.
 
 ### [`backup-disaster-recovery-audit`](./backup-disaster-recovery-audit.md)
-Resiliência de dados e **disaster recovery** — antes que o incidente aconteça.
-**Quando:** auditar/montar a estratégia de backup/DR (visão SRE/DBA).
-**Cobre:** backups automatizados (dumps, cron/scheduler/K8s CronJob) · regra 3-2-1 com isolamento off-site (a credencial da app nunca pode deletar o backup) · cripto + retenção · RPO/RTO · plano de DR/runbook · **teste de restore** (backup não testado não é backup) · scripts multi-stack (pg_dump/xtrabackup/mongodump/restic → S3/GCS/Azure/B2/R2/MinIO) com verificação por hash e alertas.
+Data resilience and **disaster recovery** — before the incident happens.
+**When to use:** auditing/building the backup/DR strategy (SRE/DBA lens).
+**Covers:** automated backups (dumps, cron/scheduler/K8s CronJob) · 3-2-1 rule with off-site isolation (the app's credential must never be able to delete the backup) · encryption + retention · RPO/RTO · DR plan/runbook · **restore test** (an untested backup is not a backup) · multi-stack scripts (pg_dump/xtrabackup/mongodump/restic → S3/GCS/Azure/B2/R2/MinIO) with hash verification and alerts.
 
 ---
 
-## ⚙️ Rigor Operacional & Coordenação
+## ⚙️ Operational Rigor & Coordination
 
 ### [`paranoid-execution-mode`](./paranoid-execution-mode.md) 🏅
-Execução paranoica para operações **irreversíveis**.
-**Quando:** mexer em banco/deploy/infra/migração/auth/billing onde estado errado causa dano.
-**Cobre:** output não-falsificável (hash/count/exit-code) · reconciliação memória-vs-realidade · transações atômicas com meta-validação · backup-first + rollback explícito · disciplina anti-workaround.
+Paranoid execution for **irreversible** operations.
+**When to use:** touching database/deploy/infra/migration/auth/billing where wrong state causes damage.
+**Covers:** non-falsifiable output (hash/count/exit-code) · memory-vs-reality reconciliation · atomic transactions with meta-validation · backup-first + explicit rollback · anti-workaround discipline.
 
 ### [`multi-phase-operation-coordination`](./multi-phase-operation-coordination.md)
-Operações complexas em **fases com pause points obrigatórios**.
-**Quando:** migração/refactor/rollout/deploy/backfill/upgrade onde "rodar tudo de uma vez" é perigoso.
-**Cobre:** executor reporta, orquestrador valida antes de autorizar · ondas só com escopo disjoint (arquivos PERMITIDOS/PROIBIDOS) · banco nunca em paralelo · estado por artefatos (PLAN/SUMMARY/VERIFICATION) resumível.
+Complex operations in **phases with mandatory pause points**.
+**When to use:** migration/refactor/rollout/deploy/backfill/upgrade where "run it all at once" is dangerous.
+**Covers:** executor reports, orchestrator validates before authorizing · waves only with disjoint scope (ALLOWED/FORBIDDEN files) · database never in parallel · state via artifacts (PLAN/SUMMARY/VERIFICATION), resumable.
 
 ### [`gotchas-knowledge-transfer`](./gotchas-knowledge-transfer.md)
-Transforma armadilhas em conhecimento transferível.
-**Quando:** construir e manter uma base de lições aprendidas.
-**Cobre:** template Sintoma → Antipattern → Fix → Root Cause → Validação Empírica → Lição · catálogo de "pegadinhas" · severidade · transferência entre sessões/agentes.
+Turns pitfalls into transferable knowledge.
+**When to use:** building and maintaining a lessons-learned base.
+**Covers:** template Symptom → Antipattern → Fix → Root Cause → Empirical Validation → Lesson · "gotcha" catalog · severity · transfer across sessions/agents.
 
 ### [`pre-ship-smoke-checklist`](./pre-ship-smoke-checklist.md)
-Smoke test pré/pós-deploy com **critérios observáveis cravados**.
-**Quando:** logo antes e logo depois de subir algo para produção.
-**Cobre:** matriz de cenários (T1..Tn) com passos/esperado/pré-condição · comandos para forçar edge cases · checklist pós-deploy (build/auth logs, DNS, cert, janela anônima) · relato reproduzível.
+Pre/post-deploy smoke test with **nailed-down observable criteria**.
+**When to use:** right before and right after shipping something to production.
+**Covers:** scenario matrix (T1..Tn) with steps/expected/precondition · commands to force edge cases · post-deploy checklist (build/auth logs, DNS, cert, incognito window) · reproducible report.
 
 ---
 
-## 🐛 Depuração, Testes & Qualidade
+## 🐛 Debugging, Testing & Quality
 
 ### [`ai-code-review`](./ai-code-review.md) 🏅
-Code review rigoroso de código de IA, **explicado para leigos**.
-**Quando:** revisar código gerado por IA antes de produção.
-**Cobre:** segurança · bugs · arquitetura · performance · tipagem · testes · manutenibilidade · escalabilidade · priorização por risco · antes/depois · código revisado.
+Rigorous code review of AI code, **explained for non-developers**.
+**When to use:** reviewing AI-generated code before production.
+**Covers:** security · bugs · architecture · performance · typing · tests · maintainability · scalability · risk-based prioritization · before/after · reviewed code.
 
 ### [`scientific-debugging-protocol`](./scientific-debugging-protocol.md)
-Depuração científica — investigar **sem pular para o fix**.
-**Quando:** bug difícil, intermitente ou de causa desconhecida.
-**Cobre:** pipeline com gates (Reproduzir → Rastrear → Propor → Verificar → Reportar) · 5-Whys · rastreio de fluxo de dados · classificação de erro (UI/API-rede/Build) · hipótese com checkpoint · forensics.
+Scientific debugging — investigate **without jumping to the fix**.
+**When to use:** hard, intermittent, or unknown-cause bugs.
+**Covers:** gated pipeline (Reproduce → Trace → Propose → Verify → Report) · 5-Whys · data-flow tracing · error classification (UI/API-network/Build) · hypothesis with checkpoint · forensics.
 
 ### [`conversational-uat`](./conversational-uat.md)
-UAT conversacional com **auto-diagnóstico** de falhas.
-**Quando:** validar features com um usuário não-técnico, sem interrogatório.
-**Cobre:** um teste por vez em texto simples · hipótese de causa raiz automática · plano de correção que realimenta só os gaps · artefato `{fase}-UAT.md`.
+Conversational UAT with **auto-diagnosis** of failures.
+**When to use:** validate features with a non-technical user, without an interrogation.
+**Covers:** one test at a time in plain text · automatic root-cause hypothesis · fix plan that re-runs only the gaps · `{phase}-UAT.md` artifact.
 
 ### [`test-coverage-audit`](./test-coverage-audit.md)
-Acha áreas críticas sem testes e propõe os testes certos.
-**Quando:** priorizar onde testar primeiro.
-**Cobre:** unitários, integração e casos de erro · prioridade por risco (auth, pagamentos, dados de usuário, lógica de negócio) · foco em comportamento · framework adequado.
+Finds critical untested areas and proposes the right tests.
+**When to use:** prioritize where to test first.
+**Covers:** unit, integration, and error cases · risk-based priority (auth, payments, user data, business logic) · behavior focus · the right framework for the project.
 
 ### [`e2e-test-architecture`](./e2e-test-architecture.md)
-Testes E2E **resilientes** (confiabilidade e manutenção).
-**Quando:** suíte E2E _flaky_ ou difícil de manter.
-**Cobre:** Page Object Model · seletores por papel/acessibilidade · esperas resilientes sem timeout fixo · locator chaining/filtering · isolamento de estado · Playwright/Cypress/Selenium/WebdriverIO/Appium/Detox.
+**Resilient** E2E tests (reliability and maintainability).
+**When to use:** a _flaky_ or hard-to-maintain E2E suite.
+**Covers:** Page Object Model · role/accessibility selectors · resilient waits without fixed timeouts · locator chaining/filtering · state isolation · Playwright/Cypress/Selenium/WebdriverIO/Appium/Detox.
 
 ### [`dead-code-elimination`](./dead-code-elimination.md)
-Remoção **segura** de código morto.
-**Quando:** limpar o projeto sem quebrar nada.
-**Cobre:** componentes/funções/imports/estado/branches mortos · feature flags fossilizadas · deps não usadas · cautelas (reflexão, DI, entrypoints dinâmicos, APIs/SDKs públicos, i18n, code splitting) · ferramentas (knip, ts-prune, vulture, cargo-udeps…).
+**Safe** removal of dead code.
+**When to use:** cleaning up the project without breaking anything.
+**Covers:** dead components/functions/imports/state/branches · fossilized feature flags · unused deps · cautions (reflection, DI, dynamic entrypoints, public APIs/SDKs, i18n, code splitting) · tools (knip, ts-prune, vulture, cargo-udeps…).
 
 ### [`type-safety-audit`](./type-safety-audit.md)
-Segurança de tipos sem overengineering.
-**Quando:** muito `any`, dados externos sem validação, tipos frouxos.
-**Cobre:** abuso de `any`/escape hatches · parâmetros/retornos sem tipo · validação runtime na fronteira (schemas) · tipos que refletem o domínio · TS/Python typing/Go/Java/Kotlin/C#/Rust.
+Type safety without overengineering.
+**When to use:** too much `any`, external data without validation, loose types.
+**Covers:** abuse of `any`/escape hatches · untyped parameters/returns · runtime validation at the boundary (schemas) · types that reflect the domain · TS/Python typing/Go/Java/Kotlin/C#/Rust.
 
 ### [`performance-optimization-audit`](./performance-optimization-audit.md)
-Performance com **medição obrigatória**.
-**Quando:** lentidão real, frontend ou backend.
-**Cobre:** re-renders e memoização justificada · cálculos no render · virtualização de listas · imagens/bundles · N+1 · paginação/índices/cache · operações bloqueantes · timeouts.
+Performance with **mandatory measurement**.
+**When to use:** real slowness, frontend or backend.
+**Covers:** re-renders and justified memoization · computation in render · list virtualization · images/bundles · N+1 · pagination/indexes/cache · blocking operations · timeouts.
 
 ---
 
-## 🎨 Frontend & Arquitetura de UI
+## 🎨 Frontend & UI Architecture
 
 ### [`state-management-audit`](./state-management-audit.md) 🏅
-Estado de UI no lugar certo, sem duplicação nem global desnecessário.
-**Quando:** prop drilling, estado inconsistente, context para tudo.
-**Cobre:** prop drilling · estado no nível errado · duplicado/derivado · uso indevido de context/store global · colocation · server-state vs client-state · React/Vue/Svelte/Solid/Angular.
+UI state in the right place, with no duplication or needless global state.
+**When to use:** prop drilling, inconsistent state, context for everything.
+**Covers:** prop drilling · state at the wrong level · duplicated/derived · misuse of context/global store · colocation · server-state vs client-state · React/Vue/Svelte/Solid/Angular.
 
 ### [`reactive-hooks-audit`](./reactive-hooks-audit.md)
-Hooks/primitivas reativas previsíveis e testáveis.
-**Quando:** bugs de re-render, stale closure, loop infinito; revisar custom hooks.
-**Cobre:** regras de hooks · dependências de efeitos corretas · extração para hooks/composables · estado simples vs reducer/máquina de estado · React/Vue/Svelte/Solid/Angular.
+Predictable, testable reactive hooks/primitives.
+**When to use:** re-render bugs, stale closures, infinite loops; reviewing custom hooks.
+**Covers:** rules of hooks · correct effect dependencies · extraction into hooks/composables · simple state vs reducer/state machine · React/Vue/Svelte/Solid/Angular.
 
 ### [`component-architecture-audit`](./component-architecture-audit.md)
-Separação entre **lógica e apresentação** (sem overengineering).
-**Quando:** componentes que fazem demais, regra de negócio na view.
-**Cobre:** lógica vazada para a UI · data-fetching em componentes de apresentação · container/presentational vs hooks/composables · refatoração para reutilizáveis e testáveis.
+Separation between **logic and presentation** (no overengineering).
+**When to use:** components that do too much, business rules in the view.
+**Covers:** logic leaked into the UI · data-fetching in presentational components · container/presentational vs hooks/composables · refactoring into reusable, testable units.
 
 ### [`frontend-design-distinctiveness`](./frontend-design-distinctiveness.md)
-Mata o **"AI slop"** visual e exige identidade estética.
-**Quando:** UI genérica/gerada por IA; definir identidade antes de construir.
-**Cobre:** rejeita clichês (gradiente roxo, Inter/Space Grotesk, bento boxes, orbs, hero centralizado, copy genérica) · exige tipografia ousada, paleta intencional, layout que quebra o grid · checklist de anti-padrões.
+Kills visual **"AI slop"** and demands an aesthetic identity.
+**When to use:** generic/AI-generated UI; defining an identity before building.
+**Covers:** rejects clichés (purple gradient, Inter/Space Grotesk, bento boxes, orbs, centered hero, generic copy) · demands bold typography, an intentional palette, a layout that breaks the grid · anti-pattern checklist.
 
 ---
 
-## 🔌 Integrações, Billing & Privacidade
+## 🔌 Integrations, Billing & Privacy
 
 ### [`third-party-integration-playbook`](./third-party-integration-playbook.md) 🏅
-Integração **robusta** com serviços externos.
-**Quando:** integrar/endurecer gateways/SaaS (pagamentos, CRM, analytics, email, mensageria).
-**Cobre:** webhooks idempotentes (id determinístico via hash) · retry/replay · state machine de eventos · sync assíncrono fire-and-forget que não bloqueia a transação · auth de webhook por header-secret · API client tipado · email transacional por template.
+**Robust** integration with external services.
+**When to use:** integrating/hardening gateways/SaaS (payments, CRM, analytics, email, messaging).
+**Covers:** idempotent webhooks (deterministic id via hash) · retry/replay · event state machine · async fire-and-forget sync that doesn't block the transaction · header-secret webhook auth · typed API client · transactional email by template.
 
 ### [`saas-billing-and-quota-enforcement`](./saas-billing-and-quota-enforcement.md)
-Cobrança e **quotas que o app não contorna**.
-**Quando:** construir/auditar planos pagos, limites de uso e trials.
-**Cobre:** quota em duas camadas (banco + UX) · catálogo de planos · usage metrics · máquinas de estado de assinatura (trialing/active/past_due/canceled) via jobs agendados · RLS WITH CHECK, pg_cron, billing_events, Stripe/Asaas.
+Billing and **quotas the app can't bypass**.
+**When to use:** building/auditing paid plans, usage limits, and trials.
+**Covers:** two-tier quota (database + UX) · plan catalog · usage metrics · subscription state machines (trialing/active/past_due/canceled) via scheduled jobs · RLS WITH CHECK, pg_cron, billing_events, Stripe/Asaas.
 
 ### [`privacy-consent-lgpd-gdpr-compliance`](./privacy-consent-lgpd-gdpr-compliance.md)
-Compliance **operacional** de privacidade (não vuln scan).
-**Quando:** qualquer sistema com dados pessoais — crítico para saúde/PII e financeiro.
-**Cobre:** consentimento dual-layer (provider + log local imutável) · políticas versionadas com gate bloqueante · cerimônia de _erase_ (pseudonimização/soft-delete, revogação de token) · DSAR em prazo legal · preservação forense da trilha de auditoria.
+**Operational** privacy compliance (not a vuln scan).
+**When to use:** any system with personal data — critical for health/PII and finance.
+**Covers:** dual-layer consent (provider + immutable local log) · versioned policies with a blocking gate · _erase_ ceremony (pseudonymization/soft-delete, token revocation) · DSAR within the legal deadline · forensic preservation of the audit trail.
 
 ---
 
-## 🏗️ Processo, Design & Documentação
+## 🏗️ Process, Design & Documentation
 
 ### [`architecture-design-blueprint`](./architecture-design-blueprint.md) 🏅
-Blueprint de arquitetura via **entrevista multi-fase com gates**.
-**Quando:** desenhar um app/serviço novo (foco técnico).
-**Cobre:** Fase 1 descoberta (objetivo + escala) · Fase 2 constraints (frontend/backend/dados/integração) · Fase 3 síntese (patterns + checklist de performance, template, validação) · camadas, contratos, decisões e trade-offs proporcionais.
+Architecture blueprint via **multi-phase interview with gates**.
+**When to use:** designing a new app/service (technical focus).
+**Covers:** Phase 1 discovery (goal + scale) · Phase 2 constraints (frontend/backend/data/integration) · Phase 3 synthesis (patterns + performance checklist, template, validation) · layers, contracts, decisions, and proportional trade-offs.
 
 ### [`skill-authoring`](./skill-authoring.md)
-Meta-prompt: **criar e revisar skills** de alta qualidade.
-**Quando:** autorar uma skill nova, padronizar uma família, auditar antes de publicar.
-**Cobre:** seletor de padrão (Tool Wrapper/Pipeline/Generator/Reviewer/Inversion) · frontmatter correto · progressive disclosure com references · estilo Mythos · teste com contexto fresco.
+Meta-prompt: **create and review** high-quality skills.
+**When to use:** authoring a new skill, standardizing a family, auditing before publishing.
+**Covers:** pattern selector (Tool Wrapper/Pipeline/Generator/Reviewer/Inversion) · correct frontmatter · progressive disclosure with references · Mythos style · testing with fresh context.
 
 ### [`doc-coauthoring-reader-testing`](./doc-coauthoring-reader-testing.md)
-Co-autoria de docs em **3 estágios com reader testing**.
-**Quando:** specs, RFCs, propostas, design docs, READMEs, ADRs, runbooks.
-**Cobre:** coleta de contexto multi-turn · refino seção-a-seção com edits incrementais · reader testing com contexto fresco (prever perguntas, caçar ambiguidade) antes de publicar.
+Doc co-authoring in **3 stages with reader testing**.
+**When to use:** specs, RFCs, proposals, design docs, READMEs, ADRs, runbooks.
+**Covers:** multi-turn context gathering · section-by-section refinement with incremental edits · reader testing with fresh context (anticipate questions, hunt ambiguity) before publishing.
 
 ### [`git-workflow-standards`](./git-workflow-standards.md)
-Padroniza commits, branches e operações de PR/MR.
-**Quando:** dar consistência ao fluxo Git de um time.
-**Cobre:** nomes de branch (feature/fix/hotfix/chore) · Conventional Commits · babysitting de PR (CI, fixup, nunca amend em publicado) · gates de workflow · auditoria de conformidade do histórico.
+Standardizes commits, branches, and PR/MR operations.
+**When to use:** bringing consistency to a team's Git flow.
+**Covers:** branch names (feature/fix/hotfix/chore) · Conventional Commits · PR babysitting (CI, fixup, never amend a published commit) · workflow gates · history compliance audit.
 
 ---
 
 ## 📱 Mobile / Flutter
-> Especializados em Flutter, com seção de **princípios cross-stack** (CSS, React Native, SwiftUI, Compose). _A versão skill (repo irmão) traz `references/assets/scripts`._
+> Specialized in Flutter, with a **cross-stack principles** section (CSS, React Native, SwiftUI, Compose). _The skill version (sibling repo) ships `references/assets/scripts`._
 
 ### [`flutter-overflow-guard`](./flutter-overflow-guard.md)
-Previne, diagnostica e **prova** ausência de overflow de layout.
-**Quando:** RenderFlex overflowed, layout quebrando, texto que não cabe, teclado cobrindo botão.
-**Cobre:** modelo de constraints · tabela sintoma→correção · Expanded/Flexible/Wrap/SingleChildScrollView/FittedBox · scanner heurístico · harness de widget-test multi-device · checklist (multi-size, textScaler, RTL, dark, SafeArea, teclado) · princípios cross-stack.
+Prevents, diagnoses, and **proves** the absence of layout overflow.
+**When to use:** RenderFlex overflowed, breaking layout, text that doesn't fit, keyboard covering a button.
+**Covers:** constraints model · symptom→fix table · Expanded/Flexible/Wrap/SingleChildScrollView/FittedBox · heuristic scanner · multi-device widget-test harness · checklist (multi-size, textScaler, RTL, dark, SafeArea, keyboard) · cross-stack principles.
 
 ### [`flutter-pro-polish`](./flutter-pro-polish.md)
-Tira a **"cara de Flutter/vibecoding"** via design tokens.
-**Quando:** deixar o app profissional/custom; fugir do Material 3/Roboto/lavanda padrão.
-**Cobre:** tabela de _tells_ · design tokens (cor/tipografia/espaço/raio/elevação/motion) · re-tema dos widgets default · scanner de defaults · dark mode desenhado · acessibilidade (AA, ≥48dp) · princípios cross-stack.
+Removes the **"Flutter/vibecoding look"** via design tokens.
+**When to use:** make the app professional/custom; escape the default Material 3/Roboto/lavender.
+**Covers:** _tells_ table · design tokens (color/typography/spacing/radius/elevation/motion) · re-theming default widgets · defaults scanner · designed dark mode · accessibility (AA, ≥48dp) · cross-stack principles.
 
 ---
 
-## 💼 Negócios
+## 💼 Business
 
 ### [`business-deep-dive-consultant`](./business-deep-dive-consultant.md)
-Consultor sênior que faz um **diagnóstico socrático** do seu negócio.
-**Quando:** entender o negócio a fundo e achar onde se ganha/perde dinheiro.
-**Cobre:** uma pergunta por vez com follow-ups · modelo de negócio, unit economics, funil, retenção, margem, gargalos · entrega 3 forças ocultas + 3 melhorias quantificadas + 2 ações de 30 dias de alto ROI.
+A senior consultant who runs a **Socratic diagnosis** of your business.
+**When to use:** understand the business in depth and find where you make/lose money.
+**Covers:** one question at a time with follow-ups · business model, unit economics, funnel, retention, margin, bottlenecks · delivers 3 hidden forces + 3 quantified improvements + 2 high-ROI 30-day actions.
 
 ---
 
-## Licença
+## License
 
-[MIT](./LICENSE) © 2026 Everton Fernandes — use, copie, modifique e distribua livremente.
+[MIT](./LICENSE) © 2026 Everton Fernandes — use, copy, modify, and distribute freely.
 
-## Repositório irmão
+## Sibling repository
 
-🧩 [**mythos-skills**](https://github.com/evertonfernandes3321-wq/mythos-skills) — os mesmos 44 como **skills nativas do Claude Code** (com frontmatter, descoberta automática e `references/assets/scripts`).
+🧩 [**mythos-skills**](https://github.com/evertonfernandes3321-wq/mythos-skills) — the same 44 as **native Claude Code skills** (with frontmatter, automatic discovery, and `references/assets/scripts`).
